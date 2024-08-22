@@ -15,11 +15,11 @@ export const routes: Routes = [
     },
     {
         path: 'jobs/:id',
-        loadComponent: () => import('./components/presenters/job-details/job-details.component').then( m => m.JobDetailsComponent)
+        loadComponent: () => import('./components/presenters/jobs/job-details/job-details.component').then( m => m.JobDetailsComponent)
     }, 
     {
         path: 'jobs/:id/apply',
-        loadComponent: () => import('./components/presenters/job-apply/job-apply.component').then( m => m.JobApplyComponent)
+        loadComponent: () => import('./components/presenters/jobs/job-apply/job-apply.component').then( m => m.JobApplyComponent)
     }, 
     {
         path: 'resumes', 
@@ -27,7 +27,7 @@ export const routes: Routes = [
     }, 
     {
         path: 'resume/:id',
-        loadComponent: () => import('./components/presenters/resume-details/resume-details.component').then( m => m.ResumeDetailsComponent)
+        loadComponent: () => import('./components/presenters/resumes/resume-details/resume-details.component').then( m => m.ResumeDetailsComponent)
     }, 
     {
         path: 'profile',
