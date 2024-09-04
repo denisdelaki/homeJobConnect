@@ -9,7 +9,6 @@ import { FooterComponent } from '../../presenters/footer/footer.component';
   standalone: true,
   imports: [
     SearchComponent, 
-    JobListingComponent,
     FooterComponent
   ],
   templateUrl: './home.component.html',
