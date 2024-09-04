@@ -1,1 +1,45 @@
-<p>menu-list works!</p>
+<div class="menu-list-container">
+  <div class="logo-container">
+    <img src="https://i.ibb.co/zNPmG9R/Screenshot-2024-09-04-at-12-13-09.png" alt="HomeConnect Logo" class="logo" />
+  </div>
+
+  <button class="menu-toggle" (click)="toggleMenu()">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <mat-nav-list [class.active]="menuOpen">
+    <mat-list>
+      <a routerLink="/" class="visible-nav-link">
+        <mat-icon>home</mat-icon>
+        <span>Home</span>
+      </a>
+      <a routerLink="/jobs">
+        <mat-icon>work</mat-icon>
+        <span>Jobs</span>
+      </a>
+      <a routerLink="/resumes">
+        <mat-icon>description</mat-icon>
+        <span>Resumes</span>
+      </a>
+      <a routerLink="/employers">
+        <mat-icon>business</mat-icon>
+        <span>Employers</span>
+      </a>
+      <a routerLink="/about-us">
+        <mat-icon>info</mat-icon>
+        <span>About Us</span>
+      </a>
+      <a routerLink="/contact-us">
+        <mat-icon>contact_support</mat-icon>
+        <span>Contact Us</span>
+      </a>
+    </mat-list>
+  </mat-nav-list>
+
+  
+    <button mat-raised-button routerLink="/login" class="login-button">
+      <span>Login</span>
+    </button>
+  
+
+</div>

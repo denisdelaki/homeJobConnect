@@ -2,3 +2,18 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+  --primary-color: #252525;
+  --secondary-color: #60CBFF;
+  --accent-color: #E85353;
+}
+
+html, body { height: 100%; }
+body { 
+  margin: 0; 
+  font-family: "Gill Sans", sans-serif;
+  background-color: #ffffff;
+  color:var(--primary-color);
+}
