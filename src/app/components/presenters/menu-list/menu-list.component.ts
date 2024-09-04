@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
 import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-menu-list',
@@ -9,7 +10,8 @@ import {MatListModule} from '@angular/material/list';
   imports: [
  MatIconModule,
  MatListModule,
-  RouterModule
+  RouterModule,
+  MatButtonModule
   ],
   templateUrl: './menu-list.component.html',
   styleUrl: './menu-list.component.scss'

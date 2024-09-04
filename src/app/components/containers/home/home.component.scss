@@ -1,0 +1,51 @@
+.home-container {
+  background-image: url('https://i.ibb.co/x5zQ7jw/pikaso-texttoimage-dark-and-mysterious-Rounded-tactile-items-presente-1.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100vw;
+  height: 100vh; /* Ensure height is also 100vh for full viewport coverage */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+.search-container {
+  background: rgba(0, 0, 0, 0.7); 
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 60%;
+  width: 100%;
+}
+
+.search-container h1 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .search-container {
+    max-width: 80%; /* Increase the width for smaller screens */
+    padding: 20px;  /* Reduce padding to fit smaller screens */
+  }
+
+  .search-container h1 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    margin-bottom: 15px; /* Adjust margin */
+  }
+}
+
+@media (max-width: 480px) {
+  .search-container {
+    max-width: 90%; /* Further increase the width for very small screens */
+    padding: 15px;  /* Further reduce padding */
+  }
+
+  .search-container h1 {
+    font-size: 1.2rem; /* Further adjust font size */
+    margin-bottom: 10px; /* Further adjust margin */
+  }
+}
